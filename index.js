@@ -32,8 +32,8 @@ app.listen(port, () => console.log(`Listening to port ${port}`));
 const TelegramBot = require('node-telegram-bot-api');
 const ChatGPTService = require('./services/chatgpt.service');
 
-const telegramToken = process.env.TELEGRAM_KEY; 
-// let telegramToken = "6668176688:AAEjsykJID2MjbTLsVfPGnZuSxZVA3N7bYg"
+// const telegramToken = process.env.TELEGRAM_KEY; 
+let telegramToken = "6668176688:AAEjsykJID2MjbTLsVfPGnZuSxZVA3N7bYg"
 
 
 const bot = new TelegramBot(telegramToken, {polling: true});

@@ -1,7 +1,7 @@
 
 const OpenAI = require('openai').default;
 
-// ... rest of your code
+
 
 
 class ChatGPTService { 
@@ -13,7 +13,8 @@ class ChatGPTService {
  
   async generateCompletion(prompt) {
     const openai = new OpenAI({
-      apiKey: process.env.OPENAI_KEY,
+      // apiKey: process.env.OPENAI_KEY,
+      apiKey:"6668176688:AAEjsykJID2MjbTLsVfPGnZuSxZVA3N7bYg"
     });
 
     let fullPrompt = this.rolePlayIntroduction + '\n\n';
